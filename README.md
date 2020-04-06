@@ -37,9 +37,14 @@ jQuery
 ### Specs
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
-| **Build contact constructor** | User Input:"jessica" | Output: "Contact {firstName: "Jessica", lastName: "Hvozdovich", phoneNumber: "555-555-5555"}" |
-| **fullName method** | User Input:"jessica.fullName();" | Output: "Jessica Hvozdovich" |
-
+| **Build Contact constructor** | User Input:"jessica" | Output: "Contact {firstName: "Jessica", lastName: "Hvozdovich", phoneNumber: "555-555-5555"}" |
+| **fullName method for Contacts** | User Input:"jessica.fullName();" | Output: "Jessica Hvozdovich" |
+| **Build AddressBook constructor** | User Input:"addressBook" | Output: "contacts: []" |
+| **Add AddressBook method to addContact** | User Input:"addressBook.addContact(jessica)" | Output: "[jessica]]" |
+| **Add AddressBook method to addId** | User Input:"addressBook.addContact(jessica)" | Output: "jessica.id = 1" |
+| **Add AddressBook method to findContact** | User Input:"addressBook.findContact(1)" | Output: "Contact {firstName: "Jessica", lastName: "Hvozdovich", phoneNumber: "555-555-5555", id: 1}" |
+| **Add AddressBook method to deleteContact** | User Input:"addressBook.deleteContact(1)" | Output: "undefined" |
+| **Add AddressBook method to updateContact** | User Input:"Contact.updateContact(1, "joe", "shmoe", "777-777-777")" | Output: "addressBook[1] ==> Contact {firstName: "Joe", lastName: "Shmoe", phoneNumber: "777-777-7777", id: 1}" |
 
 ### License
 
